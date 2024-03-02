@@ -6,8 +6,8 @@ import Wrapper from "./Wrapper";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Gallery scroll Parallax",
-  description: "Gallery scroll Parallax while scrolling with framer motion",
+  title: "Drifto",
+  description: "Drift it untill you risk it",
 };
 
 export default function RootLayout({

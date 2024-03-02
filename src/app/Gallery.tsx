@@ -3,6 +3,7 @@ import { MotionValue, useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { EVOs, GTRSs, NSXs, SUPRAs } from "./data";
+import { MotionDiv } from "./MotionComponents";
 
 export default function Gallery() {
     const targetRef = useRef(null);
@@ -55,7 +56,7 @@ const Column = ({
     y: MotionValue<number>;
 }) => {
     return (
-        <motion.div
+        <MotionDiv
             style={{ y }}
             className={` ${top} min-w-[250px] relative w-[25%]`}
         >
@@ -72,6 +73,6 @@ const Column = ({
                     <Image fill src={c?.url} alt={c.name} className="object-cover" />
                 </div>
             ))}
-        </motion.div>
+        </MotionDiv>
     );
 };

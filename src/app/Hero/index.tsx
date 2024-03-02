@@ -1,41 +1,14 @@
-"use client";
-import { Variants, motion } from "framer-motion";
 import React from "react";
+import { animIn, letter } from "../anims";
+import { MotionDiv } from "../MotionComponents";
 
 export default function Hero() {
 
-    const animIn = {
-        hide: {
-            opacity: 1,
-        },
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.08,
-                delayChildren: 0.5,
-            },
-        },
-    };
-
-    const child: Variants = {
-        hide: {
-            y: 130,
-        },
-        show: {
-            y: 0,
-            transformStyle: "preserve-3d",
-            transition: {
-                duration: 0.8,
-                ease: "easeInOut",
-            },
-        },
-    };
-
     function splitText(text: string) {
-        return text.split("").map((letter, index) => (
-            <motion.div variants={child} key={index}>
-                {letter === " " ? "\u00A0" : letter}
-            </motion.div>
+        return text.split("").map((l, index) => (
+            <MotionDiv variants={letter} key={index}>
+                {l === " " ? "\u00A0" : l}
+            </MotionDiv>
         ));
     }
 
@@ -48,34 +21,34 @@ export default function Hero() {
             </div>
             <h1 className="text-white font-black text-[8vw] leading-[80%] uppercase font-gabarito">
                 <div className="overflow-hidden">
-                    <motion.div
+                    <MotionDiv
                         variants={animIn}
                         initial="hide"
                         animate="show"
                         className="flex"
                     >
                         {splitText("risk it")}
-                    </motion.div>
+                    </MotionDiv>
                 </div>
                 <div className="overflow-hidden">
-                    <motion.div
+                    <MotionDiv
                         variants={animIn}
                         initial="hide"
                         animate="show"
                         className="flex"
                     >
                         {splitText("for")}
-                    </motion.div>
+                    </MotionDiv>
                 </div>
                 <div className="overflow-hidden">
-                    <motion.div
+                    <MotionDiv
                         variants={animIn}
                         initial="hide"
                         animate="show"
                         className="flex"
                     >
                         {splitText("the drift")}
-                    </motion.div>
+                    </MotionDiv>
                 </div>
             </h1>
         </div>

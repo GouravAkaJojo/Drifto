@@ -1,7 +1,8 @@
 export const GTRSs = [
+
     {
-        name: "r32",
-        url: "https://images.unsplash.com/photo-1600793575654-910699b5e4d4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amRtfGVufDB8MXwwfHx8Mg%3D%3D"
+        name: "r33",
+        url: "https://images.unsplash.com/photo-1655070956375-398aa8950915?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3RyJTIwcjMzfGVufDB8MXwwfHx8Mg%3D%3D"
     },
     {
         name: "r35",
@@ -12,8 +13,8 @@ export const GTRSs = [
         url: "/r34.jpg"
     },
     {
-        name: "r33",
-        url: "https://images.unsplash.com/photo-1655070956375-398aa8950915?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3RyJTIwcjMzfGVufDB8MXwwfHx8Mg%3D%3D"
+        name: "r32",
+        url: "https://images.unsplash.com/photo-1600793575654-910699b5e4d4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amRtfGVufDB8MXwwfHx8Mg%3D%3D"
     },
 ]
 

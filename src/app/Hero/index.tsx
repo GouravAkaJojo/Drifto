@@ -1,16 +1,9 @@
 import React from "react";
-import { animIn, letter } from "../anims";
+import { animIn } from "../anims";
 import { MotionDiv } from "../MotionComponents";
+import { splitText } from "../utils/functions";
 
 export default function Hero() {
-
-    function splitText(text: string) {
-        return text.split("").map((l, index) => (
-            <MotionDiv variants={letter} key={index}>
-                {l === " " ? "\u00A0" : l}
-            </MotionDiv>
-        ));
-    }
 
     return (
         <div className="max-w-[100vw] relative h-screen flex justify-center items-center">
@@ -26,8 +19,15 @@ export default function Hero() {
                         initial="hide"
                         animate="show"
                         className="flex"
+                        transition={{
+                            staggerChildren: 0.08,
+                            delayChildren: 0.5,
+                        }}
                     >
-                        {splitText("risk it")}
+                        {splitText("risk it", {
+                            duration: 0.8,
+                            ease: "easeInOut",
+                        })}
                     </MotionDiv>
                 </div>
                 <div className="overflow-hidden">
@@ -36,8 +36,15 @@ export default function Hero() {
                         initial="hide"
                         animate="show"
                         className="flex"
+                        transition={{
+                            staggerChildren: 0.08,
+                            delayChildren: 0.5,
+                        }}
                     >
-                        {splitText("for")}
+                        {splitText("for", {
+                            duration: 0.8,
+                            ease: "easeInOut",
+                        })}
                     </MotionDiv>
                 </div>
                 <div className="overflow-hidden">
@@ -46,8 +53,15 @@ export default function Hero() {
                         initial="hide"
                         animate="show"
                         className="flex"
+                        transition={{
+                            staggerChildren: 0.08,
+                            delayChildren: 0.5,
+                        }}
                     >
-                        {splitText("the drift")}
+                        {splitText("the drift", {
+                            duration: 0.8,
+                            ease: "easeInOut",
+                        })}
                     </MotionDiv>
                 </div>
             </h1>

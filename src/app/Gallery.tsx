@@ -2,7 +2,7 @@
 import { MotionValue, useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { EVOs, GTRSs, NSXs, SUPRAs } from "./data";
+import { EVOs, GTRSs, NSXs, SUPRAs } from "./utils/data";
 import { MotionDiv } from "./MotionComponents";
 
 export default function Gallery() {
@@ -34,9 +34,9 @@ export default function Gallery() {
     return (
         <div
             ref={targetRef}
-            className="p-2 h-[150vh] overflow-hidden py-4 bg-[#1b1b1b]"
+            className="h-[150vh] overflow-hidden "
         >
-            <div className="flex gap-4 h-full max-w-[98vw] mx-auto">
+            <div className="flex gap-4 h-full mx-auto rounded-xl overflow-hidden">
                 <Column cars={GTRSs} top={"top-[-60%]"} y={y1} />
                 <Column cars={SUPRAs} top={"top-[-90%]"} y={y2} />
                 <Column cars={EVOs} top={"top-[-65%]"} y={y3} />

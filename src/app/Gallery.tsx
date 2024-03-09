@@ -18,10 +18,9 @@ export default function Gallery() {
         function heighter() {
             setHeight(window.innerHeight)
         }
-        window.addEventListener("scroll", heighter)
+        heighter()
         window.addEventListener("resize", heighter)
         return () => {
-            window.removeEventListener("scroll", heighter)
             window.removeEventListener("resize", heighter)
         }
     }, [])

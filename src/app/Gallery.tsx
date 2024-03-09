@@ -33,7 +33,7 @@ export default function Gallery() {
     return (
         <div
             ref={targetRef}
-            className="h-[150vh] overflow-hidden "
+            className="h-[150vh] overflow-hidden"
         >
             <div className="flex gap-4 h-full mx-auto rounded-xl overflow-hidden">
                 <Column cars={GTRSs} top={"top-[-60%]"} y={y1} />

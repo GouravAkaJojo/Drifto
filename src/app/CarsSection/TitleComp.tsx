@@ -5,7 +5,7 @@ import { animIn } from '../anims'
 
 export default function TitleComp({ title }: { title: string }) {
     return (
-        <div className='sticky top-0 left-0'>
+        <div className='sticky top-0 left-0 font-bionix'>
             <div className='' >
                 <MotionDiv
                     initial="hide"

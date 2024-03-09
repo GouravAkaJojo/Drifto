@@ -12,7 +12,7 @@ export default function Hero() {
                     <video muted autoPlay playsInline src='/drifto.mp4' className="h-full w-full object-cover" loop />
                 </div>
             </div>
-            <h1 className="text-white font-black text-[8vw] leading-[80%] uppercase font-gabarito">
+            <h1 className="text-white font-bionix text-[14vw] lg:text-[8vw] leading-[80%] uppercase ">
                 <div className="overflow-hidden">
                     <MotionDiv
                         variants={animIn}

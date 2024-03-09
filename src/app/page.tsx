@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <Porsche />
       <Subaru />
+      <Porsche />
       <Gallery />
       <div className="h-screen" />
     </div >

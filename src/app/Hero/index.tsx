@@ -21,7 +21,6 @@ export default function Hero() {
                         className="flex"
                         transition={{
                             staggerChildren: 0.08,
-                            delayChildren: 0.5,
                         }}
                     >
                         {splitText("risk it", {
@@ -38,7 +37,6 @@ export default function Hero() {
                         className="flex"
                         transition={{
                             staggerChildren: 0.08,
-                            delayChildren: 0.5,
                         }}
                     >
                         {splitText("for", {
@@ -55,7 +53,6 @@ export default function Hero() {
                         className="flex"
                         transition={{
                             staggerChildren: 0.08,
-                            delayChildren: 0.5,
                         }}
                     >
                         {splitText("the drift", {

@@ -9,5 +9,5 @@
 
 @font-face {
   font-family: var(--font-bionix);
-  src: url("/assets/fonts/Bionix.woff2") format("woff2");
+  src: url("/fonts/Bionix.woff2") format("woff2");
 }

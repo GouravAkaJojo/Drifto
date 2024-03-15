@@ -2,8 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Wrapper from "./Wrapper";
+import localfont from "next/font/local"
 
 const inter = Inter({ subsets: ["latin"] });
+
+const bionix = localfont({
+  src: "./assets/fonts/bionix.woff2",
+  variable: "--font-bionix"
+})
 
 export const metadata: Metadata = {
   title: "Drifto",
@@ -17,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className + " " + bionix.variable}>
         <Wrapper>
           {children}
         </Wrapper>

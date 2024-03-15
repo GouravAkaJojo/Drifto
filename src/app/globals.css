@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-bionix: "Bionix", sans-serif;
-  --font-eger: "Eger", sans-serif;
-}
-
-@font-face {
-  font-family: var(--font-bionix);
-  src: url("/fonts/Bionix.woff2") format("woff2");
+body {
+  font-family: var(--font-inter);
 }

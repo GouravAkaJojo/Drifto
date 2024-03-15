@@ -7,7 +7,7 @@ import localfont from "next/font/local"
 const inter = Inter({ subsets: ["latin"] });
 
 const bionix = localfont({
-  src: "../../public/fonts/bionix.woff2",
+  src: "fonts/bionix.woff2",
   variable: "--font-bionix"
 })
 

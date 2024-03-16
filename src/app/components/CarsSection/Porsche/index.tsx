@@ -1,7 +1,5 @@
 import React from 'react'
-import { splitText } from '../../utils/functions'
-import { MotionDiv } from '../../components/MotionComponents'
-import { animIn } from '../../anims'
+
 import TitleComp from '../TitleComp'
 
 export default function Porsche() {

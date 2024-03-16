@@ -1,11 +1,12 @@
 import React from 'react'
 import { MotionDiv } from '../MotionComponents'
-import { splitText } from '../utils/functions'
-import { animIn } from '../anims'
+import { animIn } from '@/app/anims'
+import { splitText } from '@/app/utils/functions'
 
-export default function TitleComp({ title }: { title: string }) {
+
+export default function TitleComp({ title, mixDiff = true }: { title: string, mixDiff?: boolean }) {
     return (
-        <div className='sticky top-0 left-0 font-bionix'>
+        <div className={`sticky top-0 bg-white ${mixDiff && "mix-blend-difference"} left-0 font-bionix z-[5]`}>
             <div className='' >
                 <MotionDiv
                     initial="hide"
@@ -19,7 +20,7 @@ export default function TitleComp({ title }: { title: string }) {
                     transition={{
                         staggerChildren: 0.03,
                     }}
-                    className='uppercase text-[6vw] lg:text-[4vw] font-black flex overflow-hidden p-2'
+                    className='text-black uppercase text-[6vw] lg:text-[4vw] font-black flex leading-[90%] overflow-hidden p-2'
                 >{splitText(title, {
                     duration: 0.6,
                     ease: [0.83, 0, 0.17, 1]

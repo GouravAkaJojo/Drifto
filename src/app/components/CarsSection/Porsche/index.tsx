@@ -1,6 +1,6 @@
 import React from 'react'
 import { splitText } from '../../utils/functions'
-import { MotionDiv } from '../../MotionComponents'
+import { MotionDiv } from '../../components/MotionComponents'
 import { animIn } from '../../anims'
 import TitleComp from '../TitleComp'
 

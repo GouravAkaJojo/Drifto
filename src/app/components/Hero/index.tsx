@@ -1,7 +1,7 @@
 import React from "react";
-import { animIn } from "../anims";
+import { animIn } from "../../anims";
 import { MotionDiv } from "../MotionComponents";
-import { splitText } from "../utils/functions";
+import { splitText } from "../../utils/functions";
 
 export default function Hero() {
 

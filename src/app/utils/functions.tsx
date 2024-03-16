@@ -1,5 +1,5 @@
 import { AnimationProps, Variants } from "framer-motion";
-import { MotionDiv } from "../MotionComponents";
+import { MotionDiv } from "../components/MotionComponents";
 import { letter } from "../anims";
 
 export function splitText(text: string, transition: AnimationProps["transition"]) {

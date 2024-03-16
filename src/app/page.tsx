@@ -1,7 +1,7 @@
-import Gallery from "./Gallery";
-import Hero from "./Hero";
-import Porsche from "./CarsSection/Porsche";
-import Subaru from "./CarsSection/Subaru";
+import Porsche from "./components/CarsSection/Porsche";
+import Subaru from "./components/CarsSection/Subaru";
+import Gallery from "./components/CarsSection/Gallery";
+import Hero from "./components/Hero";
 
 export default function Home() {
 

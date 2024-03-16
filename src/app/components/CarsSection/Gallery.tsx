@@ -2,8 +2,9 @@
 import { MotionValue, useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { EVOs, GTRSs, NSXs, SUPRAs } from "./utils/data";
-import { MotionDiv } from "./MotionComponents";
+import { EVOs, GTRSs, NSXs, SUPRAs } from "../../utils/data";
+import { MotionDiv } from "../MotionComponents";
+import TitleComp from "./TitleComp";
 
 export default function Gallery() {
     const targetRef = useRef(null);
@@ -25,23 +26,27 @@ export default function Gallery() {
         }
     }, [])
 
-    const y1 = useTransform(scrollYProgress, [0, 1], [0, height * 0.6]);
-    const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2.8]);
-    const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.5]);
+    const y1 = useTransform(scrollYProgress, [0, 1], [0, height * 0.5]);
+    const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 0.8]);
+    const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.3]);
     const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 1]);
 
     return (
-        <div
-            ref={targetRef}
-            className="h-[150vh] overflow-hidden"
-        >
-            <div className="flex gap-4 h-full mx-auto rounded-xl overflow-hidden">
-                <Column cars={GTRSs} top={"top-[-60%]"} y={y1} />
-                <Column cars={SUPRAs} top={"top-[-90%]"} y={y2} />
-                <Column cars={EVOs} top={"top-[-65%]"} y={y3} />
-                <Column cars={NSXs} top={"top-[-75%]"} y={y4} />
+        <div>
+            <TitleComp title="JDM" mixDiff={false} />
+            <div
+                ref={targetRef}
+                className="h-[150vh] overflow-hidden"
+            >
+                <div className="flex gap-4 h-full mx-auto rounded-b-xl overflow-hidden">
+                    <Column cars={GTRSs} top={"top-[-60%]"} y={y1} />
+                    <Column cars={SUPRAs} top={"top-[-50%]"} y={y2} />
+                    <Column cars={EVOs} top={"top-[-65%]"} y={y3} />
+                    <Column cars={NSXs} top={"top-[-75%]"} y={y4} />
+                </div>
             </div>
         </div>
+
     );
 }
 

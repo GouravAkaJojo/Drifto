@@ -4,6 +4,7 @@ import TitleComp from '../TitleComp'
 import Image from 'next/image'
 import { MotionDiv } from '../../MotionComponents'
 import { useScroll, useTransform } from 'framer-motion'
+import Engine from './Engine'
 
 export default function Subaru() {
     const MainRef = useRef(null)
@@ -33,18 +34,21 @@ export default function Subaru() {
     const mainImagX = useTransform(scrollYProgress, [0.2, 1], [0, width / 2 * 0.07])
 
 
+
     return (
-        <MotionDiv ref={MainRef} className='relative h-screen md:h-[120vh]'>
-            <div
-                className='absolute top-1/2 left-1/2 z-[-1] md:z-[2] md:whitespace-nowrap text-[15vw] md:text-[8vw] font-bold -translate-x-1/2 -rotate-6 font-bionix -translate-y-1/2'>
-                <MotionDiv
-                    style={{ y: textY }} className='textOutline leading-[80%]'>
-                    IMPREZA WRX STI
-                </MotionDiv>
-            </div>
+        <div
+
+            className='relative'>
             <TitleComp title='subaru' />
-            <div className='flex justify-center h-full items-center overflow-hidden '>
-                <div>
+            <MotionDiv ref={MainRef} className='flex relative justify-center h-full items-center overflow-hidden '>
+                <div
+                    className='absolute top-1/2 left-1/2 z-[-1] md:z-[2] md:whitespace-nowrap text-[15vw] md:text-[8vw] font-bold -translate-x-1/2 -rotate-6 font-bionix -translate-y-1/2'>
+                    <MotionDiv
+                        style={{ y: textY }} className='textOutline leading-[80%]'>
+                        IMPREZA WRX STI
+                    </MotionDiv>
+                </div>
+                <div >
                     <div className='flex justify-center items-center gap-3 md:gap-10'>
                         <MotionDiv
                             style={{ y: firstImgY }}
@@ -68,8 +72,10 @@ export default function Subaru() {
                         <Image fill src="/subaru/subaru-back-tilt.png" alt='subaru' />
                     </MotionDiv>
                 </div>
-            </div>
-        </MotionDiv>
+            </MotionDiv>
+            <Engine width={width} />
+
+        </div >
     )
 }
 

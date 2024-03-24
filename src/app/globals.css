@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-color: white;
-} */
+body {
+  font-family: "Inter", sans-serif;
+}
 
 ::selection {
   background-color: black;
@@ -14,4 +14,15 @@
 .textOutline {
   color: white;
   -webkit-text-stroke: 2px black;
+}
+
+.navbar-close {
+  transition: all 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+  &::before {
+    transition: all 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+  }
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

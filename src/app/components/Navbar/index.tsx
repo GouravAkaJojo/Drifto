@@ -20,7 +20,7 @@ export default function Navbar() {
         <div ref={scope} className="font-kobuzan">
             <div
                 onClick={onOpenNav}
-                className="fixed uppercase top-1 md:top-5 text-lg md:text-2xl right-2 md:right-5 mix-blend-difference text-white z-[10] cursor-pointer"
+                className="fixed uppercase top-2 md:top-3 text-lg md:text-2xl right-2 md:right-5 mix-blend-difference text-white z-[10] cursor-pointer"
             >
                 Menu
             </div>

@@ -8,10 +8,8 @@ export default function Porsche() {
         <div className='relative '>
             <TitleComp title='prosche' />
             <div className='relative'>
-                <div className='absolute top-1/3 left-1/2 z-[-1] md:z-[2] md:whitespace-nowrap text-[15vw] md:text-[8vw] font-bold -translate-x-1/2 -rotate-6  -translate-y-1/2'>
-                    <MotionDiv
-                        // style={{ y: textY }}
-                        className='textOutline leading-[80%]'>
+                <div className='absolute top-1/3 left-1/2 z-[-1] md:z-[2] whitespace-nowrap text-[15vw] md:text-[13vw] font-bold -translate-x-1/2 -translate-y-1/2'>
+                    <MotionDiv className='textOutline leading-[80%]'>
                         911 GT3
                     </MotionDiv>
                 </div>

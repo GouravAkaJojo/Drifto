@@ -20,7 +20,7 @@ export default function TitleComp({ title, mixDiff = true }: { title: string, mi
                     transition={{
                         staggerChildren: 0.03,
                     }}
-                    className='text-black uppercase text-[6vw] lg:text-[4vw] font-black flex leading-[90%] overflow-hidden p-2'
+                    className='text-black uppercase text-[6vw] lg:text-[3vw] font-black flex leading-[90%] overflow-hidden p-2'
                 >{splitText(title, {
                     duration: 0.6,
                     ease: [0.83, 0, 0.17, 1]

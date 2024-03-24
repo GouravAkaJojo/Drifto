@@ -37,12 +37,11 @@ export default function Subaru() {
 
     return (
         <div
-
             className='relative'>
             <TitleComp title='subaru' />
             <MotionDiv ref={MainRef} className='flex relative justify-center h-full items-center overflow-hidden '>
                 <div
-                    className='absolute top-1/2 left-1/2 z-[-1] md:z-[2] md:whitespace-nowrap text-[15vw] md:text-[8vw] font-bold -translate-x-1/2 -rotate-6 font-bionix -translate-y-1/2'>
+                    className='absolute top-1/2 left-1/2 z-[-1] md:z-[2] md:whitespace-nowrap text-[13vw] md:text-[7vw] font-bold -translate-x-1/2 -rotate-6  -translate-y-1/2'>
                     <MotionDiv
                         style={{ y: textY }} className='textOutline leading-[80%]'>
                         IMPREZA WRX STI

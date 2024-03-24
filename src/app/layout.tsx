@@ -4,11 +4,11 @@ import "./globals.scss";
 import Wrapper from "./components/Wrapper";
 import localfont from "next/font/local"
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-const bionix = localfont({
-  src: "../../public/fonts/Bionix.woff2",
-  variable: "--font-bionix"
+const kobuzan = localfont({
+  src: "../../public/fonts/Kobuzan.woff2",
+  variable: "--font-kobuzan"
 })
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " " + bionix.variable}>
+      <body className={kobuzan.className + " " + inter.variable}>
         <Wrapper>
           {children}
         </Wrapper>

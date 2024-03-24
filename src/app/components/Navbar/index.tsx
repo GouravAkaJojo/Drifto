@@ -5,7 +5,6 @@ import {
     DynamicAnimationOptions,
     stagger,
 } from "framer-motion";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -18,7 +17,7 @@ export default function Navbar() {
     }, [isOpen]);
 
     return (
-        <div ref={scope} className="font-bionix">
+        <div ref={scope} className="font-kobuzan">
             <div
                 onClick={onOpenNav}
                 className="fixed uppercase top-1 md:top-5 text-lg md:text-2xl right-2 md:right-5 mix-blend-difference text-white z-[10] cursor-pointer"
@@ -61,7 +60,7 @@ export default function Navbar() {
                                         {word.split("").map((char, index) => (
                                             <motion.div
                                                 key={char + index}
-                                                className=" relative inline-block text-[15vw] md:text-[8vw] sm:tracking-[-0.2rem] leading-[110%] uppercase font-extrabold"
+                                                className=" relative inline-block text-[13vw] md:text-[6vw] sm:tracking-[-0.2rem] leading-[110%] uppercase font-extrabold"
                                             >
                                                 <motion.div style={{ transformOrigin: "top" }} className={`real-${word}`}>
                                                     {char === ' ' ? '\u00A0' : char}

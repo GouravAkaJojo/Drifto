@@ -10,8 +10,8 @@ export default function Home() {
     <div className="">
       <Navbar />
       <Hero />
-      <Subaru />
       <Porsche />
+      <Subaru />
       <Gallery />
       <div className="h-screen mix-blend-difference bg-white" />
     </div >

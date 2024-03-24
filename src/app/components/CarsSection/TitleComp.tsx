@@ -6,7 +6,7 @@ import { splitText } from '@/app/utils/functions'
 
 export default function TitleComp({ title, mixDiff = true }: { title: string, mixDiff?: boolean }) {
     return (
-        <div className={`sticky top-0 bg-white ${mixDiff && "mix-blend-difference"} left-0 font-bionix z-[5]`}>
+        <div className={`sticky top-0 bg-white ${mixDiff && "mix-blend-difference"} left-0  z-[5]`}>
             <div className='' >
                 <MotionDiv
                     initial="hide"

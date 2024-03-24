@@ -12,7 +12,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        bionix: ['var(--font-bionix)', ...fontFamily.sans]
+        kobuzan: ['var(--font-kobuzan)', ...fontFamily.sans],
+        inter: ['var(--font-inter)', ...fontFamily.sans]
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

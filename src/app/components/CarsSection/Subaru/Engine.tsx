@@ -17,7 +17,7 @@ export default function Engine({ width }: { width: number }) {
     return (
         <div
             ref={engineRef}
-            className=' p-8 sm:p-14 sm:pb-44 flex justify-center flex-col gap-5 items-center md:flex-row '>
+            className=' p-8 sm:p-14 sm:pb-44 flex justify-center font-inter flex-col gap-5 items-center md:flex-row '>
             <MotionDiv
                 style={{ y: textY }}
                 className='font-extrabold text-lg md:text-xl basis-1/2'>

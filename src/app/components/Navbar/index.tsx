@@ -5,6 +5,7 @@ import {
     DynamicAnimationOptions,
     stagger,
 } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -20,7 +21,7 @@ export default function Navbar() {
         <div ref={scope} className="font-bionix">
             <div
                 onClick={onOpenNav}
-                className="fixed uppercase top-5 text-2xl right-5 mix-blend-difference text-white z-[10] cursor-pointer"
+                className="fixed uppercase top-1 md:top-5 text-lg md:text-2xl right-2 md:right-5 mix-blend-difference text-white z-[10] cursor-pointer"
             >
                 Menu
             </div>
@@ -30,6 +31,12 @@ export default function Navbar() {
                     className="nav fixed top-0 left-0 w-screen h-screen z-[20] bg-white"
                 >
                     <div className="nav-inner relative w-full h-full">
+                        <div
+                            className="absolute uppercase top-1 md:top-5 text-lg md:text-2xl left-2 md:left-5 z-[99] cursor-pointer"
+                        >
+                            Drifto
+                        </div>
+
                         <div className="absolute right-0 top-0 z-[99]">
                             <div
                                 onClick={onCloseNav}

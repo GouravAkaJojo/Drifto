@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import Wrapper from "./components/Wrapper";
 import localfont from "next/font/local"
 

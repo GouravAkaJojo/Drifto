@@ -21,7 +21,7 @@ export default function Engine({ width }: { width: number }) {
             <MotionDiv
                 style={{ y: textY }}
                 className='font-extrabold text-lg md:text-xl basis-1/2'>
-                Experience the IMPREZA WRX STI&apos;s lightning-fast acceleration, propelling you from 0 to 60 mph in a blistering few seconds. Beneath its hood roars a turbocharged 2.5-liter boxer engine, churning out a jaw-dropping 310 horsepower. This rally-bred beast doesn&apos;t just push boundaries; it obliterates them, offering an unmatched blend of power, agility, and excitement on every journey.
+                Experience the IMPREZA WRX STI&apos;s lightning-fast acceleration, propelling you from 0 to 60 mph in a blistering few seconds. Beneath its hood roars a turbocharged 2.5-liter boxer engine, churning out a jaw-dropping 310 horsepower. This rally-bred beast doesn&apos;t just push boundaries, it obliterates them, offering an unmatched blend of power, agility, and excitement on every journey.
             </MotionDiv>
             <MotionDiv style={{ y: engineIMgy }} className='basis-1/2 flex justify-center '>
                 <img src='/subaru/engine.png' alt='subaru-engine' />

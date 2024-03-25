@@ -39,7 +39,7 @@ export default function AnimatedBanner() {
 
     const isUnderTab = width <= 768
     return (
-        <div ref={MainRef} className='relative py-10 overflow-hidden'>
+        <div ref={MainRef} className='relative pt-10 overflow-hidden'>
             <div className='absolute top-1/3 left-1/2 z-[1] whitespace-nowrap text-[15vw] md:text-[13vw] font-bold -translate-x-1/2 -translate-y-1/2'>
                 <MotionDiv className='textOutline relative leading-[80%]'>
                     {/* 

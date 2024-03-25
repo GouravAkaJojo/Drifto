@@ -77,3 +77,11 @@ export const NSXs = [
     },
 
 ]
+
+export enum CloudsE {
+    WHITEONE = "https://static.tildacdn.com/tild6664-6334-4431-a262-666164393165/_.svg",
+    BLACKONE = "https://static.tildacdn.com/tild3333-3134-4936-b838-353062396531/_.svg",
+    DUSKYONE = "https://static.tildacdn.com/tild3234-3966-4832-a438-386463343662/___.svg",
+    SMOKEONE = "https://static.tildacdn.com/tild3362-3335-4334-b963-326634626162/pngimg_3_1_1_1_1_1_1.png",
+    LOWONE = "https://static.tildacdn.com/tild6363-6138-4164-a135-303037616265/2_1_1_1_1_1_1_1_1_1_.png",
+}

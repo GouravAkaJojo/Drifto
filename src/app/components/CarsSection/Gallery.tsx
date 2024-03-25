@@ -33,7 +33,7 @@ export default function Gallery() {
 
     return (
         <div>
-            {/* <TitleComp title="JDM" mixDiff={false} /> */}
+            <TitleComp title="JDM" mixDiff={false} />
             <div
                 ref={targetRef}
                 className="h-[150vh] overflow-hidden"

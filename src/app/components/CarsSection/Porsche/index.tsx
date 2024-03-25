@@ -38,8 +38,6 @@ export default function Porsche() {
     const TextY = useTransform(scrollYProgress, [0.1, 1], [50, -width / 10])
     const scale = useTransform(scrollYProgress, [0.1, 1], [1, 0.8]);
 
-
-
     const isUnderTab = width <= 768
 
     return (

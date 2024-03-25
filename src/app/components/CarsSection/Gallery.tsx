@@ -26,14 +26,14 @@ export default function Gallery() {
         }
     }, [])
 
-    const y1 = useTransform(scrollYProgress, [0, 1], [0, height * 0.5]);
+    const y1 = useTransform(scrollYProgress, [0, 1], [0, height * 0.4]);
     const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 0.8]);
     const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.3]);
-    const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 1]);
+    const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 0.8]);
 
     return (
         <div>
-            <TitleComp title="JDM" mixDiff={false} />
+            {/* <TitleComp title="JDM" mixDiff={false} /> */}
             <div
                 ref={targetRef}
                 className="h-[150vh] overflow-hidden"

@@ -21,9 +21,8 @@ export default function Specs() {
         y.set(0);
     }
 
-
     return (
-        <div className='px-2 lg:px-28 bg-white font-inter font-medium md:text-lg overflow-hidden'>
+        <div className='px-2 lg:px-28 bg-white font-inter font-extrabold md:text-lg overflow-hidden'>
             <Engine />
             <Build />
             <MotionDiv

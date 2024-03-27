@@ -10,8 +10,8 @@ export default function Engine({ width }: { width: number }) {
         offset: ['start end', 'end start']
     })
 
-    const engineIMgy = useTransform(scrollYProgress, [0.2, 1], [0, width / 2 * 0.2])
-    const textY = useTransform(scrollYProgress, [0.2, 1], [0, width / 2 * 0.1])
+    const engineIMgy = useTransform(scrollYProgress, [0.2, 1], [100, -(width / 2) * 0.2])
+    const textY = useTransform(scrollYProgress, [0.2, 1], [100, -(width / 2) * 0.05])
 
 
     return (

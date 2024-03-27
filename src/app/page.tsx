@@ -13,7 +13,12 @@ export default function Home() {
       <Porsche />
       <Subaru />
       <Gallery />
-      <div className="h-screen mix-blend-difference bg-white" />
+      <div className="relative">
+        <div className="h-screen w-screen bg-transparent" />
+        <div className="h-screen absolute top-0 left-0 w-screen z-[-50] mix-blend-difference bg-black text-white flex justify-center items-center text-[15vw]">
+          DRIFTO
+        </div>
+      </div>
     </div >
   );
 }

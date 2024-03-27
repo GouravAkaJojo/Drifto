@@ -24,7 +24,6 @@ export default function Subaru() {
             <TitleComp title='subaru' />
             <AnimatedBanner width={width} />
             <Engine width={width} />
-
         </div >
     )
 }

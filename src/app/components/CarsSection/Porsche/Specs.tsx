@@ -22,7 +22,7 @@ export default function Specs() {
     }
 
     return (
-        <div className='px-2 lg:px-28 bg-white font-inter font-extrabold md:text-lg overflow-hidden'>
+        <div className='px-2 lg:px-28 bg-white md:text-lg overflow-hidden uppercase font-kobuzan'>
             <Engine />
             <Build />
             <MotionDiv

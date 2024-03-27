@@ -6,7 +6,7 @@ import { splitText } from "../../utils/functions";
 export default function Hero() {
 
     return (
-        <div className="max-w-[100vw] relative h-screen flex justify-center items-center">
+        <div id="home" className="max-w-[100vw] relative h-screen flex justify-center items-center">
             <div className="absolute w-full h-[100vh] flex justify-center items-center top-0 left-0 z-[-1] overflow-hidden">
                 <div className="reltive w-full h-full">
                     <video muted autoPlay playsInline src='/drifto.mp4' className="h-full w-full object-cover" loop />

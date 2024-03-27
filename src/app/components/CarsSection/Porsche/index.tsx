@@ -8,7 +8,7 @@ export default function Porsche() {
 
 
     return (
-        <div className='relative'>
+        <div id='porsche' className='relative'>
             <TitleComp title='prosche' />
             <AnimatedBanner />
             <Specs />

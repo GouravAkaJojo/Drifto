@@ -32,7 +32,7 @@ export default function Gallery() {
     const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 0.8]);
 
     return (
-        <div>
+        <div id="jdms">
             <TitleComp title="JDM" mixDiff={false} />
             <div
                 ref={targetRef}

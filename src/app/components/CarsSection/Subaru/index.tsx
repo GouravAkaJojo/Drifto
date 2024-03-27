@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TitleComp from '../TitleComp'
 
 import Engine from './Engine'
@@ -20,8 +20,7 @@ export default function Subaru() {
     }, [])
 
     return (
-        <div
-            className='relative'>
+        <div id="subaru" className='relative'>
             <TitleComp title='subaru' />
             <AnimatedBanner width={width} />
             <Engine width={width} />

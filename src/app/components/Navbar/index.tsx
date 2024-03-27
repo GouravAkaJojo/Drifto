@@ -5,6 +5,7 @@ import {
     DynamicAnimationOptions,
     stagger,
 } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -15,6 +16,14 @@ export default function Navbar() {
     useEffect(() => {
         document.body.style.overflow = isOpen ? "hidden" : "auto";
     }, [isOpen]);
+
+    const scrollToDiv = (id: string) => {
+        setIsOpen(false)
+        onCloseNav()
+        const div = document.getElementById(id);
+        div?.scrollIntoView({ behavior: 'smooth' });
+
+    };
 
     return (
         <div ref={scope} className="font-kobuzan">
@@ -45,8 +54,8 @@ export default function Navbar() {
                         </div>
                         <ul className=" flex flex-col justify-center h-full w-full">
                             {MENU_ITEMS.map((word, index) => (
-
                                 <motion.div
+                                    onClick={() => scrollToDiv(word)}
                                     key={index}
                                     className="overflow-hidden cursor-pointer"
                                 >
@@ -58,6 +67,7 @@ export default function Navbar() {
                                         style={{ whiteSpace: 'pre' }}
                                     >
                                         {word.split("").map((char, index) => (
+
                                             <motion.div
                                                 key={char + index}
                                                 className=" relative inline-block text-[13vw] md:text-[6vw] sm:tracking-[-0.2rem] leading-[110%] uppercase font-extrabold"
@@ -79,6 +89,7 @@ export default function Navbar() {
                                         className="lines w-0 h-[2px] bg-black"
                                     />
                                 </motion.div>
+
                             ))}
                         </ul>
                     </div>
@@ -160,4 +171,4 @@ function useNavAnimation({
     return { scope, onCloseNav, onOpenNav, onTextHover, onTextLeave };
 }
 
-const MENU_ITEMS = ["Home", "Subaru", "Porsche", "Jdms"];
+const MENU_ITEMS = ["home", "porsche", "subaru", "jdms"];
